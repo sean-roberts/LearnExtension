@@ -1,0 +1,65 @@
+<!-- @author Sean Roberts -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn Extension</title>
+        <link href="styles/style.css" rel="stylesheet"/>
+        <link href="styles/code.css" rel="stylesheet"/>
+
+    </head>
+    <body>
+
+        <article class="article">
+
+            <div class="article--title">
+                Intl.NumberFormat
+            </div>
+
+            <!-- <div class="article--type"> JS Preview </div> -->
+
+            <div class="article--content">
+                <p>Part of the internationalization ES6 API spec, NumberFormat allows
+                for language sensitive number formatting. Given a locale and some options
+                via on the constructor call, you get an object that has a format method.
+                That format method is what does the heavy lifting on formatting the number.</p>
+
+                <pre>
+                    <code class="language-javascript">
+                        var number = 123456.789;
+
+                        console.log(new Intl.NumberFormat().format(number));
+                        // '123,456.789' if in US English locale
+
+                        // German uses comma as decimal separator
+                        // and period for thousands
+                        console.log(new Intl.NumberFormat('de-DE').format(number));
+                        // 123.456,789
+                    </code>
+
+                </pre>
+
+                <p>
+                    The API is very straight forward and offers a powerful tool for anyone
+                    in the need of internationalization of their website.
+                </p>
+            </div>
+
+            <script src="scripts/prism.js"></script>
+            <script>
+                Prism.plugins.NormalizeWhitespace.setDefaults({
+                    'remove-trailing': true,
+                    'remove-indent': true,
+                    'left-trim': true,
+                    'right-trim': true,
+                    /*'break-lines': 80,
+                    'indent': 2,
+                    'remove-initial-line-feed': false,
+                    'tabs-to-spaces': 4,
+                    'spaces-to-tabs': 4*/
+                });
+            </script>
+        </article>
+
+    </body>
+</html>

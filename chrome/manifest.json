@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "LearnExtension",
+    "short_name": "LearnExt",
+	"description": "",
+	"version": "0.0.0",
+    
+    "icons": {
+        "38": "icons/action-38.png"
+    },
+
+	"chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+
+    "offline_enabled" : true
+}
