@@ -1,0 +1,11 @@
+# mac directory stuff
+.DS_Store
+
+# chrome builds
+*.crx
+*.zip
+packages/
+
+#local node stuff
+node_modules/
+*.log
